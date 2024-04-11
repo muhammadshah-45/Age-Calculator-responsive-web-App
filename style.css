@@ -21,13 +21,15 @@
 }
 .calculator h1{
     font-size: 60px;
+    width: 100%;
 
 }
 .calculator span{
-    color: burlywood;
+    color: rgb(0, 173, 165);
 }
 .input-bo{
-   margin: 30px 10px;
+    width: 100%;
+   margin: 30px 0px;
    background: #074173;
    /* opacity: 1; */
    padding: 35px 52px;
@@ -36,6 +38,7 @@
    align-items: center;
 }
 .input-bo input{
+    width: 100%;
     flex: 3;
     margin-right:20px;
     padding: 14px 4px;
@@ -70,4 +73,95 @@
     background-position: calc(100% );
     background-size: 30px;
     cursor: pointer;
+}
+
+
+/* Media Query */
+
+@media only screen and (max-width:1200px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .calculator h1{
+        
+        font-size: 80px;
+    }
+    .input-bo button:hover{
+        background: #f1f171;
+    
+        }
+}
+
+@media only screen and (max-width:1024px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .calculator h1{
+        font-size: 50px;
+    }
+    .input-bo{
+        padding: 20px;
+    }
+    .input-bo button:hover{
+        background: #f1f171;
+    
+        }
+}
+@media only screen and (max-width:768px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .calculator h1{
+        font-size: 45px;
+        margin:10px 0px;
+    }
+    .input-bo{
+        width: 100%;
+        padding: 20px 20px;
+    }
+    .input-bo input{
+        padding: 9px;
+    }
+    .input-bo button{
+        padding: 10px;
+    }
+    .input-bo button:hover{
+        background: #f1f171;
+    
+        }
+}
+
+@media only screen and (max-width:425px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .calculator{
+        width: 100%;
+    }
+    .calculator h1{
+        font-size: 30px;
+    }
+    .input-bo{
+        padding: 10px 20px;
+    }
+    .input-bo input{
+        padding: 13px 25px;
+    }
+    .input-bo button{
+        padding: 15px;
+    }
+    .input-bo button:hover{
+    background: #f1f171;
+
+    }
+    
 }
