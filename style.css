@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    padding: 34px;
+    background: linear-gradient(4deg,#f16866,pink);
+    width: 100%;
+    height: 100vh;
+    /* min-height: 450px; */
+
+}
+.calculator{
+    width: 50%;
+    /* min-width: 340px; */
+    margin: 45px;
+    text-transform: capitalize;
+    /* font-weight: 800; */
+}
+.calculator h1{
+    font-size: 60px;
+
+}
+.calculator span{
+    color: burlywood;
+}
+.input-bo{
+   margin: 30px 10px;
+   background: #074173;
+   /* opacity: 1; */
+   padding: 35px 52px;
+   display: flex;
+   border-radius: 10px;
+   align-items: center;
+}
+.input-bo input{
+    flex: 3;
+    margin-right:20px;
+    padding: 14px 4px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    color: #333;
+    /* font-weight: 500; */
+    font-size: 18px;
+    position: relative;
+
+}
+.input-bo button{
+    /* flex: 1; */
+    padding: 14px 24px;
+    background: #ffff76;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.input-bo input::-webkit-calendar-picker-indicator{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% );
+    background-size: 30px;
+    cursor: pointer;
+}
